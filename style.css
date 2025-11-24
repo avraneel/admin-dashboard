@@ -6,13 +6,15 @@
 
 .container {
     display: grid;
-    gap: 2rem;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
 .sidebar {
     grid-row: 1/3;
+    background-color: #2990d4;
+    color: #ffffff;
+    padding: 2rem;
 }
 
 .top-bar {
@@ -23,6 +25,8 @@
 
 .dashboard {
     display: grid;
+    padding: 2rem;
+    background-color: #dadcdf;
     gap: 2rem;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
@@ -40,6 +44,30 @@
 
 .projects-grid {
     display: grid;
+    margin: 1rem;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+}
+
+.announce-grid {
+    display: grid;
+    padding: 2rem 1rem;
+}
+
+.button {
+    background-color: #2990d4;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+.announce-grid, .trending-users {
+    background-color: #ffffff;
 }
