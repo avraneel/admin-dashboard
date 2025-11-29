@@ -63,15 +63,18 @@ header {
 
 .sidebar-item {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 8fr;
     align-items: center;
     gap: 1rem;
     font-weight: bold;
 }
 
+.dashboard h2 {
+    margin-bottom: 2rem;
+}
+
 .projects-grid {
     display: grid;
-    margin: 1rem;
     gap: 2rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
@@ -79,12 +82,13 @@ header {
 
 .card {
     background-color: #ffffff;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem;  
 }
 
 .announce-grid {
     display: grid;
-    padding: 2rem 1rem;
+    gap: 2rem;
+    padding: 3rem 5rem; /* top right */
 }
 
 .button {
