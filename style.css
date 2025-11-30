@@ -25,36 +25,26 @@ body {
 }
 
 .sidebar {
+    display: grid;
     grid-row: 1/3;
     background-color: #2990d4;
     color: #ffffff;
     padding: 2rem;
-}
-
-header {
-    display: grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 2fr 1fr;
-    
-}
-
-.dashboard {
-    display: grid;
-    padding: 2rem;
-    background-color: #dadcdf;
-    gap: 2rem;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 3fr 1fr;
-}
-
-.projects {
-    grid-row: 1/3;
-}
-
-.sidebar {
-    display: grid;
     gap: 3rem;
     align-content: start;
+}
+
+.sidebar-header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    align-items: center;
+    font-weight: bold;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+.sidebar-header img {
+    height: 100%;
 }
 
 .sidebar-group {
@@ -68,6 +58,33 @@ header {
     align-items: center;
     gap: 1rem;
     font-weight: bold;
+}
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.button {
+    background-color: #2990d4;
+    color: #ffffff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+}
+
+.dashboard {
+    display: grid;
+    padding: 2rem;
+    background-color: #dadcdf;
+    gap: 2rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+    grid-row: 1/3;
 }
 
 .dashboard h2 {
@@ -105,14 +122,6 @@ header {
 
 .announce-grid p {
     line-clamp: 4;
-}
-
-.button {
-    background-color: #2990d4;
-    color: #ffffff;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 5rem;
 }
 
 .announce-grid, .trending-users {
