@@ -65,8 +65,9 @@ header {
     display: grid;
     grid-template-rows: 1fr 3fr;
     grid-template-columns: 2fr 1fr;
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 1rem 2rem 0 2rem;
     gap: 2rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .search-bar {
@@ -82,9 +83,10 @@ header {
 
 .search-bar input {
     border-radius: 5rem;
-    padding: 2rem;
+    padding: 1rem;
     background-color:hsla(0, 0%, 77%, 0.438);
     border: none;
+    width: 100%;
 }
 
 .usermenu {
@@ -95,19 +97,25 @@ header {
     align-items: center;
 }
 
+.usermenu p {
+    justify-self: start;
+}
+
 .notif {
     width: 25%;
     border-radius: 50%;
+    justify-self: end;
 }
 
 .profile {
     width: 50%;
     border-radius: 50%;
+    justify-self: center;
 }
 
 .greeting {
     display: grid;
-    grid-template-columns: 1fr 8fr;
+    grid-template-columns: minmax(60px, 1fr) 8fr;
     grid-template-rows: 1fr 2fr;
     column-gap: 1rem;
     align-items: start;
@@ -177,21 +185,28 @@ header {
     background-color: #ffffff;
     padding: 2rem 1rem;  
     border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .dashboard p {
     color: #585b5e;
+
 }
 
 .announce-grid {
     display: grid;
-    gap: 2rem;
-    padding: 3rem 5rem; /* top right */
+    gap: 1rem;
+    padding: 2rem 3rem; /* top right */
     border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.announce-grid p {
-    line-clamp: 4;
+.item p {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .announce-grid, .trending-users {
@@ -204,6 +219,7 @@ header {
     gap: 2rem;
     padding: 2rem;
     border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .user {
